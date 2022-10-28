@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+        }
+
+        /*
+        * margin: auto will not work for inline elements
+        * You need to make them block level first using display: block property
+        */
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .box {
+            width: 32.8%;
+            display: inline-block;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+
+    <br><br>
+
+    <img src="./images/leaf.jpeg" alt="My Image">
+
+    <br><br>
+
+    <div class="box">
+        <h1>Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi officia eveniet maxime exercitationem! Earum saepe quos, neque similique dolorum facere!</p>
+    </div>
+    <div class="box">
+        <h1>Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi officia eveniet maxime exercitationem! Earum saepe quos, neque similique dolorum facere!</p>
+    </div>
+    <div class="box">
+        <h1>Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi officia eveniet maxime exercitationem! Earum saepe quos, neque similique dolorum facere!</p>
+    </div>
+</body>
+</html>
