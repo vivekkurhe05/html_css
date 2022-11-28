@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            background: #E7E9EB;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .form-group {margin-bottom: 10px;}
+        .form-group > label {display: block;margin-bottom: 5px;}
+        .form-group input, .form-group select {width: 100%; padding: 10px;border: 1px solid lightgray;border-radius: 5px;}
+        input[type="submit"] {width: 100%;padding: 12px 20px;background: #04AA6D;color: #fff;border: none;border-radius: 5px;}
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using CSS to style an HTML Form</h2>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Your name..">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Your last name..">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>

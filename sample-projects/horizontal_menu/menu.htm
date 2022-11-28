@@ -1,0 +1,33 @@
+<!-- my solution using nested div tags & CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+div.container{background:#333;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+div.navbar{max-width:80%;margin:auto;overflow:auto;}
+h2 {display:inline-block;padding:10px;cursor:pointer;}
+ul {float:right;}
+li{float:left;list-style-type:none;padding:15px;cursor:pointer;}
+a {display:inline-block;text-decoration: none;color: #fff;}
+li.active{background: red}
+li:hover{background: black;}
+</style>
+</head>
+<body>
+
+<div class='container'>
+    <div class='navbar'>
+        <h2><a href="#hbt">HBT</a></h2>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+
+

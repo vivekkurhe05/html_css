@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        *{margin:0;padding: 0;}
+        div.navbar {background: #333;color: #fff;overflow: auto;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        li {
+            float:left;
+            list-style-type: none;
+            padding:15px;
+            cursor: pointer;
+        }
+
+        li.active{background: #04AA6D;}
+
+        li:hover:not(li:nth-child(1)){background: black;}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="active">Home</li>
+            <li>News</li>
+            <li>Contact</li>
+            <li style="float: right;">About</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

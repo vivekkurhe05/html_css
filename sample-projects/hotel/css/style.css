@@ -36,6 +36,10 @@ a {
     background: #f7c08a;
 }
 
+.l-heading {
+    font-size: 40px;
+}
+
 /* Navbar */
 #navbar {
     background: #333;
@@ -150,6 +154,29 @@ a {
 
 .bg-dark {
     background: #f7c08a;
+}
+
+/* Contact Form */
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #f7c08a;
+}
+
+#contact-form textarea {
+    height: 200px;
 }
 
 /* Footer */
