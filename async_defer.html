@@ -1,0 +1,28 @@
+There are two major things happen on the web browser
+1. The HTML parsing
+2. The loading of the scripts
+
+The loading of the scripts contain two parts
+1. The fetching the script from the network
+2. Executing the script line by line
+
+We will see three scenarios
+
+1. Normal scenario
+<script src=""></script>
+Suppose your browser is parsing the html line by line and suddenly encounters the script tag, the browser pause or stops the parsing at that point of time and fetches the script from the network and gets into the browser and runs it immediately. While the script is fetched from the network and executed there, the html parsing is paused by the browser and continued only when the script is executed. So here actually the script is blocking the html parsing. So this is not a good case.
+
+2. Async attribute scenario
+<script async src=""></script>
+Meanwhile the html parsing is going on, any of our scripts with async tag are fetched from the network asynchronously along with the html parsing. While html parsing is going on, the async scripts are fetched from the network. As soon as the async scripts are fetched and are available in the browser, the html parsing stops and the async scripts are executed immediately. Once the scripts are executed, the html parsing continues like regular. So while the script has finished it's execution, the html parsing is blocked.
+
+3. Defer attribute scenario
+<script defer src=""></script>
+In case of defer attribute, the html parsing goes on and scripts with defer attribute are fetched in parallel. The scripts are executed only once the html parsing is fully complete.
+
+
+What to use when?
+Eg.1 -> async attribute does not guarantee the order of execution of the scripts, but defer does.
+Suppose if you multiple scripts dependent on each other i.e. some scripts are dependent on other, so using the async tag does not guarantee that these scripts will be executed in a particular order, that may break your code. So in that case we should probably prefer defer scripts 
+
+Eg.2 -> Suppose you have to load some external scripts for instance google analytics or other analytic scripts which are quite modular and are independent of our normal code, so in that case it makes sense to use an async attribute and not use a defer. Otherwise it is mostly wise to use a defer attribute because defer attribute maintains the order of execution of the scripts

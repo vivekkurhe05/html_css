@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+    <style>
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: blue;
+        }
+
+        .container1 > div {
+            margin: 15px;
+            padding: 30px;
+            background-color: white;
+            width: 100px;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: blue;
+        }
+
+        .container2 > div {
+            margin: 15px;
+            padding: 30px;
+            background-color: white;
+            width: 100px;
+            text-align: center;
+        }
+
+        .container3 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: blue;
+        }
+
+        .container3 > div {
+            margin: 15px;
+            padding: 30px;
+            background-color: white;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Flex-wrap with wrap value</h1>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h1>Example of Flex-wrap with nowrap value</h1>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h1>Example of Flex-wrap with wrap-reverse value</h1>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>

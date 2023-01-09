@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2</title>
+    <style>
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+        }
+
+        .container1 > div {
+            margin: 15px;
+            padding: 40px 50px;
+            background-color: white;
+            width: 50px;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: blue;
+        }
+
+        .container2 > div {
+            margin: 15px;
+            padding: 40px 50px;
+            background-color: white;
+            width: 50px;
+            text-align: center;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: row;
+            background-color: blue;
+        }
+
+        .container3 > div {
+            margin: 15px;
+            padding: 40px 50px;
+            background-color: white;
+            width: 50px;
+            text-align: center;
+        }
+
+        .container4 {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: blue;
+        }
+
+        .container4 > div {
+            margin: 15px;
+            padding: 40px 50px;
+            background-color: white;
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Flex direction column value</h1>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <h1>Example of Flex direction column-reverse value</h1>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>Example of Flex direction row value</h1>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>Example of Flex direction row-reverse value</h1>
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

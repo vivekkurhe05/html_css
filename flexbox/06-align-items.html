@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+    <style>
+
+        .container1 {
+            display: flex;
+            align-items: center;
+            background-color: blue;
+            height: 300px;
+        }
+
+        .container1 > div {
+            width: 50px;
+            margin: 10px;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container2 {
+            display: flex;
+            align-items: flex-start;
+            background-color: blue;
+            height: 300px;
+        }
+
+        .container2 > div {
+            width: 50px;
+            margin: 10px;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container3 {
+            display: flex;
+            align-items: flex-end;
+            background-color: blue;
+            height: 300px;
+        }
+
+        .container3 > div {
+            width: 50px;
+            margin: 10px;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container4 {
+            display: flex;
+            align-items: stretch;
+            background-color: blue;
+        }
+
+        .container4 > div {
+            width: 50px;
+            margin: 10px;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container5 {
+            display: flex;
+            align-items: baseline;
+            background-color: blue;
+        }
+
+        .container5 > div {
+            width: 50px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of align-items with center value</h1>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>Example of align-items with flex-start value</h1>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>Example of align-items with flex-end value</h1>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>Example of align-items with stretch value</h1>
+    <div class="container4">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, placeat.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, vero tenetur! Atque quo expedita eum quibusdam, nesciunt corrupti! At, aliquid?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, temporibus laboriosam? Incidunt error autem labore eligendi ipsam facere, numquam fugiat? Quidem porro iure laborum rem ex molestias, error doloribus quae incidunt praesentium! Architecto itaque ex consectetur similique odit deserunt deleniti ducimus? Deleniti velit quibusdam quasi et harum quia necessitatibus laboriosam.</div>
+    </div>
+
+    <h1>Example of align-items with baseline value</h1>
+    <div class="container5">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, placeat.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, vero tenetur! Atque quo expedita eum quibusdam, nesciunt corrupti! At, aliquid?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, temporibus laboriosam? Incidunt error autem labore eligendi ipsam facere, numquam fugiat? Quidem porro iure laborum rem ex molestias, error doloribus quae incidunt praesentium! Architecto itaque ex consectetur similique odit deserunt deleniti ducimus? Deleniti velit quibusdam quasi et harum quia necessitatibus laboriosam.</div>
+    </div>
+</body>
+</html>
